@@ -1,37 +1,122 @@
+body{
+    background-color: #878fd0;
+}
 
-main {
+.container {
     display: inline-block;
     width: 800px;
-    background-color: cadetblue;
+    background-color: #878fd0;
     margin-left: calc((100% - 800px) / 2);
     margin-top: 100px;
 }
-div:nth-of-type(1){
+.left-column{
     display: inline-block;
+    float: left;
     width: 40%;
     padding: 40px;
-    background-color: chartreuse;
+    background-color: #029bdd;
+    color: white;
 }
 
-h1{
-
+.main-title{
+display: inline-block;
+width: 100%;
 }
 
-footer{
-
+.bottom-links{
+display: inline-block;
+width: 100%;
 }
 
-a{
-
-
+.link{
+display: inline-block;
+color: white;
 }
 
-span{
-
+.text{
+display: inline-block;
 }
 
-div:nth-of-type(2){
+.right-column{
     display: inline-block;
     width: 58%;
-    background-color: cyan;
+    float: left;
+    padding: 60px;
+    background-color: white;
+}
+.close{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+}
+
+.form{
+    display: inline-block;
+    width: 100%;
+}
+
+.form-row{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form-row:last-of-type{
+    margin-bottom: 0;
+}
+
+label{
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    color: #999;
+    font-size: 14px;
+}
+
+input{
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #005bd9;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 20px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #1e6fcb;
+}
+
+
+.form-row > .text{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+
+.form-row > .link{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
+    color: #005bd9;
+    text-decoration: none;
 }
