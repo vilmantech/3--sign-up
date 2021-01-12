@@ -1,21 +1,43 @@
 body{
     background-color: #878fd0;
+    
 }
 
-.container {
+.background{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: #878fd0;
+    background-image: url(./img/hill.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center bottom;
+    filter: blur(15%);
+}
+
+.container{
     display: inline-block;
     width: 800px;
-    background-color: #878fd0;
-    margin-left: calc((100% - 800px) / 2);
-    margin-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 .left-column{
     display: inline-block;
     float: left;
     width: 40%;
     padding: 40px;
     background-color: #029bdd;
+    background-image: url(./img/hill.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center bottom;
     color: white;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
 }
 
 .main-title{
@@ -25,7 +47,10 @@ width: 100%;
 
 .bottom-links{
 display: inline-block;
-width: 100%;
+position: absolute;
+bottom: 20px;
+left: 40px;
+
 }
 
 .link{
@@ -39,10 +64,11 @@ display: inline-block;
 
 .right-column{
     display: inline-block;
-    width: 58%;
-    float: left;
+    width: 60%;
+    float: right;
     padding: 60px;
     background-color: white;
+    position: relative;
 }
 .close{
     display: inline-block;
@@ -50,6 +76,10 @@ display: inline-block;
     height: 60px;
     position: absolute;
     top: 0;
+    right: 0%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 54px;
 }
 
 .form{
@@ -84,7 +114,7 @@ input{
     border-bottom: 2px solid #ccc;
 }
 
-.btn {
+.btn{
     display: inline-block;
     background-color: #005bd9;
     color: white;
