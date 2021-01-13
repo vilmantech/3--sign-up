@@ -1,12 +1,14 @@
 body{
     background-color: #878fd0;
-    
+    overflow: hidden;
 }
 
 .background{
     display: inline-block;
-    width: 100%;
-    height: 100vh;
+    width: colc(100% + 30px);
+    height: calc(100vh + 30px);
+    margin-top: -15px;
+    margin-left: -15px;
     background-color: #878fd0;
     background-image: url(./img/hill.jpg);
     background-repeat: none;
@@ -112,6 +114,11 @@ input{
     line-height: 40px;
     border: none;
     border-bottom: 2px solid #ccc;
+}
+
+input::placeholder{
+    color: #ccc;
+    font-style: italic;
 }
 
 .btn{
